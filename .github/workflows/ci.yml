@@ -53,7 +53,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - run: docker build -t get-app:ci backend/get-app
-      - uses: aquasecurity/trivy-action@v0.71.0
+      - uses: aquasecurity/trivy-action@v0.36.0
         with:
           image-ref: get-app:ci
           format: sarif
